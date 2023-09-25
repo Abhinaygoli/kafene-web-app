@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Nav bar styles */
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #f6f7fb;
+}
+.top-bar-section{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0 48px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    box-shadow: 0 2px 4px #ccc;
+    background-color: #fff;
+    justify-content: space-between;
+}
+.top-bar-left-section{
+    display: flex;
+    align-items: center;
+}
+.top-bar-logo-wrapper{
+    margin-right: 36px;
+    display: flex;
+    align-items: center;
+}
+.top-bar-logo-wrapper img {
+    width: 24px;
+    height: 28px;
+    margin-right: 8px;
+}
+.kafene{
+    font-size: 24px;
+    letter-spacing: -1px;
+    font-weight: 500;
+    margin: 0;
+    color: rgba(0,0,0,.8);
+}
+.top-bar-menu-item{
+    display: inline-block;
+    text-decoration: none;
+    color: rgba(0,0,0,.8);
+    padding: 24px 0 16px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: .6px;
+    margin: 0 10px;
+}
+
+/* Log in form styles */
+
+.app-main-container{
+    margin-top: 100px;
+}
+.log-in-form{
+    width: 100%;
+    max-width: 500px;
+    border-radius: 6px;
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 32px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 6px #ccc;
+}
+.log-in-form h1 {
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin: 0 0 24px;
+}
+.log-in-form-input-field{
+    width: 100%;
+    padding-top: 16px;
+    font-size: 14px;
+    box-sizing: border-box;
+    border: 0;
+    border-bottom: 2px solid #8c8c8c;
+    margin-bottom: 16px;
+    outline: none;
+}
+.log-in-form-button-field{
+    display: inline-block;
+    border-radius: 30px;
+    padding: 14px 36px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background-color: #20b883;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 24px;
+}
+
+/* Filter and table formation Styles */
+
+.nav-item-active{
+    color: #20b883;
+    border-bottom: 3px solid #20b883;
+}
+#log-out-button{
+    display: inline-block;
+    text-decoration: none;
+    color: rgba(0,0,0,.8);
+    padding: 24px 0 16px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: .6px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.order-page-wrapper{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 8% 4%;
+}
+.order-page-main-heading{
+    margin: 0;
+}
+.order-page-orders-wrapper{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    padding: 24px 0;
+}
+.order-page-filter-wrapper{
+    width: 180px;
+}
+.order-page-filter-wrapper h3{
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.17em;
+}
+.order-page-filter-options{
+    display: flex;
+    flex-direction: column;
+}
+.order-page-filter-checkbox{
+    margin: 6px 0;
+    cursor: pointer;
+}
+.order-page-filter-checkbox input {
+    margin-right: 7px;
+}
+.order-page-table{
+    width: 100%;
+    border-collapse: collapse;
+    display: table;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: gray;
+}
+table > tr {
+    vertical-align: middle;
+    display: table-row;
+    border-color: inherit;
+}
+.order-page-table th {
+    text-align: left;
+    padding: 12px 24px;
+    font-size: 14px;
+}
+th {
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+}
+.secondary-text-styles{
+    color: #8c8c8c
+}
+.primary-text-styles{
+    color: rgba(0,0,0,.8);
+    font-weight: 500;
+}
+#orderData td{
+    background-color: #fff;
+    border-bottom: 4px solid #f6f7fb;
+    text-align: left;
+    padding: 12px 24px;
+    font-size: 14px;
+}
+
+/* Users page styles */
+
+.userlist-filter-form{
+    width: 700px;
+    display: flex;
+    align-items: center;
+    margin: 35px 0px;
+}
+.userlist-searchbox-element{
+    width: calc(100% - 100px);
+    padding: 12px 24px;
+    font-size: 15px;
+    border: 0;
+    border-bottom: 2px solid #8c8c8c;
+    margin: 0 36px 0 0;
+    outline: none;
+}
+.userlist-reset-btn-element{
+    display: inline-block;
+    border-radius: 30px;
+    padding: 14px 36px;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    background-color: #20b883;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}

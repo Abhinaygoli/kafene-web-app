@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Users page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <link href="./styles.css" rel="stylesheet" />
+  </head>
+  <body>
+
+    <div class="top-bar-section">
+        <div class="top-bar-left-section">
+          <!-- Logo wrapper -->
+  
+          <div class="top-bar-logo-wrapper">
+            <img
+              src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png"
+              alt="kefene logo"
+            />
+            <p class="kafene">Kafene</p>
+          </div>
+  
+          <!-- Nav items -->
+          <nav>
+            <a class="top-bar-menu-item" href="order page.html" >Orders</a>
+            <a class="top-bar-menu-item " href="products.html">Products</a>
+            <a class="top-bar-menu-item nav-item-active" href="">Users</a>
+          </nav>
+        </div>
+        <p id="log-out-button" onclick="userLogOut()">Logout</p>
+      </div>
+
+          <!-- Orders section -->
+
+      <main class="app-main-container">
+        <div class="order-page-wrapper">
+            <h1 class="order-page-main-heading">Users</h1>
+            <div >
+
+              <!-- Form creation for search and reset using input tags -->
+
+                <form class="userlist-filter-form" id="search-form">
+                    <input class="userlist-searchbox-element" type="search" id="searchBox" placeholder="Search by Name">
+                    <input type="reset" class="userlist-reset-btn-element" value="Reset" id="resetBtn">
+                </form>
+
+                <!-- creating Table -->
+                
+                <div style="width: 100%;">
+                    <table class="order-page-table">
+                        <tr>
+                            <th>ID</th>
+                            <th>User Avatar</th>
+                            <th>Full Name</th>
+                            <th>DoB</th>
+                            <th>Gender</th>
+                            <th>Current Location</th>
+                        </tr>
+                        <tbody id="orderData">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+      </main>
+      <script src="./users.js"></script>
+  </body>
+</html>

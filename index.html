@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Log in page</title>
+    <link href="./styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="top-bar-section">
+      <div class="top-bar-left-section">
+        
+        <!-- Logo wrapper -->
+
+        <div class="top-bar-logo-wrapper">
+          <img
+            src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png"
+            alt="kefene logo"
+          />
+          <p class="kafene">Kafene</p>
+        </div>
+
+        <!-- Nav items -->
+        <nav>
+          <a class="top-bar-menu-item" href="">Orders</a>
+          <a class="top-bar-menu-item" href="">Products</a>
+          <a class="top-bar-menu-item" href="">Users</a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Log in detaiils section -->
+
+    <main class="app-main-container">
+      <form class="log-in-form">
+        <h1>Sign In</h1>
+        <input
+          type="text"
+          placeholder="Enter Username"
+          name="username"
+          class="log-in-form-input-field"
+          id="username"
+        />
+        <input
+          type="password"
+          placeholder="Enter Password"
+          name="password"
+          class="log-in-form-input-field"
+          id="password"
+        />
+        <input
+          type="submit"
+          value="Login"
+          class="log-in-form-button-field"
+          id="submit"
+          onclick="loginFormValidation()"
+        />
+      </form>
+    </main>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
